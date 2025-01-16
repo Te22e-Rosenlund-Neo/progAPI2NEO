@@ -32,7 +32,7 @@ List<Teacher> GetTeachers()
 }
 IResult GetTeacher(int n)
 {
-    if (n <= 0 && n < teachers.Count)
+    if (n >= 0 && n < teachers.Count)
     {
         return Results.Ok(teachers[n]);
     }
